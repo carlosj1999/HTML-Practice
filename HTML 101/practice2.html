@@ -1,0 +1,127 @@
+<!--HTML page layout-->
+<!doctype html>
+<html lang="en-US" dir="ltr">
+
+<head>
+    <!--head is all information non displayable in the page 
+    meta can be all the info hide in the page
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A description of this site that will show up in search engine result">
+    <meta name="application-name" content="Filament Group"
+    content="/..image">
+    <meta name="theme-color" content="#247200">
+    <link rel="manifest" href="/webappmanifest.json">
+    <title>Document</title>-->
+
+    <title>Form Basic</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1">
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+
+<body>
+    <h1>Our Form</h1>
+    <!--<header></header>-->
+    <main> 
+        <form action="received.html" method="get">
+    
+            <label for="name"> Name </label>
+            <input name="name" id="name" type="text">
+
+            <label for="email"> Email </label>
+            <input name="email" id="email" type="email" required
+                placeholder="me@example.com" >
+<!--instead of placeholder you can use value that will give a real value to de field-->
+
+            <label for="password"> Password</label>
+            <input type="password" id="password" name="password">
+
+            <label for="search">Search</label>
+            <input type="search" name="search" id="search" placeholder="&#128269">
+
+            <label for="phone">Phone</label>
+            <input type="tel" name="phone" id="phone">
+
+            <label for="textarea">Text Area</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="15"></textarea>
+
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date">
+
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color">
+
+            <label for="file">File</label>
+            <input type="file" name="file" id="file"
+            accept="image/*" multiple>
+
+            <label for="checkbox">Checkbox</label>
+            <input type="checkbox" name="simplecheckbox" id="checkbox"
+            value="The checkbox is checked" checked>
+
+            <label for="selectlist">Choose one</label>
+            <select name="selectlist" id="selectlist">
+                <option value="">First</option>
+                <option value="">Second</option>
+                <option value="">Third</option>
+            </select>
+
+            <fieldset>
+                <legend>Checkboxes in a fieldset</legend>
+                <input type="checkbox" name="checkboxlist" id="thischeck" value="This" checked>
+                <label for="thischeck">This</label>
+
+                <input type="checkbox" name="checkboxlist" id="orcheck" value="And Or">
+                <label for="orcheck">And/Or</label>
+
+                <input type="checkbox" name="checkboxlist" id="thatcheck" value="That">
+                <label for="thatcheck">That</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Radio buttons in a fieldset</legend>
+                <input type="radio" name="radiobutton" id="thisradio">
+                <label for="thisradio">This</label>
+
+                <input type="radio" name="radiobutton" id="orcheck" value="And Or">
+                <label for="orcheck">And/Or</label>
+
+                <input type="radio" name="radiobutton" id="thatcheck" value="That">
+                <label for="thatcheck">That</label>
+            </fieldset>
+            <button type="submit">Submit</button>
+        </form>
+
+        <table>
+            <tr>
+                <th>Bird</th>
+                <th>color</th>
+                
+            </tr>
+            <tr>
+                <td>American Goldfish</td>
+                <td>Yellow</td>
+                <td> <img src="" alt=""></td>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+            <tr>
+            </tr>
+        </table>
+
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
